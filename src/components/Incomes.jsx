@@ -34,7 +34,7 @@ const Incomes = () => {
 
     try {
       setLoading(true);
-      const response = await fetch("http://localhost:5000/incomes/all", {
+      const response = await fetch("https://b1-ibcx.onrender.com/incomes/all", {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,

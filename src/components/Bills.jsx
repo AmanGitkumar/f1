@@ -30,7 +30,7 @@ const Bills = () => {
    const fetchNotifications = async () => {
     const token = localStorage.getItem("token");
     try {
-        const response = await axios.get("http://localhost:5000/api/notifications", {
+        const response = await axios.get("https://b1-ibcx.onrender.com/api/notifications", {
             headers: { Authorization: `Bearer ${token}` },
         });
         setNotifications(response.data);
@@ -58,7 +58,7 @@ const Bills = () => {
     try {
         console.log("🔄 Marking bill as paid...");
 
-        const response = await axios.put(`http://localhost:5000/api/bills/mark-paid/${id}`);
+        const response = await axios.put(`https://b1-ibcx.onrender.com/api/bills/mark-paid/${id}`);
         
         console.log("✅ Response:", response.data);
 
@@ -78,7 +78,7 @@ const Bills = () => {
     try {
         console.log("🔄 Deleting bill...");
 
-        const response = await axios.delete(`http://localhost:5000/api/bills/delete/${id}`);
+        const response = await axios.delete(`https://b1-ibcx.onrender.com/api/bills/delete/${id}`);
         
         console.log("✅ Response:", response.data);
 

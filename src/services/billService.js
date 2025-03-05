@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/bills"; // Update with your backend URL
+const API_URL = "https://b1-ibcx.onrender.com/api/bills"; // Update with your backend URL
 
 export const addBill = async (billData) => {
   const token = localStorage.getItem("token");

@@ -17,7 +17,7 @@ const ProfilePicture = () => {
     formData.append("image", selectedFile);
 
     try {
-      const response = await axios.post("http://localhost:5000/upload", formData, {
+      const response = await axios.post("https://b1-ibcx.onrender.com/upload", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
 

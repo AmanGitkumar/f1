@@ -19,7 +19,7 @@ const Notifications = () => {
 
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/notifications",
+        "https://b1-ibcx.onrender.com/api/notifications",
         {
           headers: { Authorization: `Bearer ${token}` },
         }
@@ -46,7 +46,7 @@ const Notifications = () => {
       }
 
       await axios.put(
-        `http://localhost:5000/api/notifications/mark-read/${id}`,
+        `https://b1-ibcx.onrender.com/api/notifications/mark-read/${id}`,
         { isRead: true }, // ✅ Ensure backend gets `isRead` update
         { headers: { Authorization: `Bearer ${token}` } }
       );

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/notifications";
+const API_URL = "https://b1-ibcx.onrender.com/notifications";
 
 // 📌 ✅ Get all notifications
 export const getNotifications = async () => {

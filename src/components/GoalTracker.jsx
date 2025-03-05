@@ -307,7 +307,7 @@ const GoalTracker = () => {
       const userId = storedUser ? JSON.parse(storedUser)._id : null;
       if (!userId) return;
 
-      const response = await axios.get(`http://localhost:5000/goals/${userId}`);
+      const response = await axios.get(`https://b1-ibcx.onrender.com/goals/${userId}`);
       setAnnualGoal(response.data.annualGoal);
     } catch (error) {
       console.log("Error fetching goal:", error);
